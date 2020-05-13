@@ -522,6 +522,7 @@ html{
   		margin-bottom: 8px;
   		font-size: 15px;
 		cursor: pointer;
+		font-family: nunito sans;
 	}
 
 
@@ -588,9 +589,9 @@ html{
 #textspace{
 	height:250px;
 }
-
+	#textspace span{font-family: nunito sans;}
 #contact h4{
-	margin-left:20px;
+	margin-left:20px;font-family: nunito sans;
 }
 
 
