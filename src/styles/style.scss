@@ -1,0 +1,700 @@
+*{margin: 0; padding:0; font-family: nunito sans; }	
+*:focus {
+	outline: none;
+	overflow: hidden;
+}
+
+$bggold : #fff6c0;
+
+#container{
+	width:100%;
+	display:inline-block;
+}
+
+#main{
+	display:inline-block;
+	width:100%;
+	height:100vh;
+}
+
+
+/*--------------------------------------------------------------preloader-----------------------------------------------------------------------------*/
+
+
+#preloadcover{
+  width: 100%;
+  height: 100vh;
+  display:inline-block;
+  background: #fff;
+  animation-name: pre;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  position: fixed;
+  z-index: 3;
+}
+
+@keyframes pre{
+	0%{height: 100vh;}
+	60%{height: 100vh;}
+	100%{height:0vh;}
+}
+.preloader-1 {
+  display: inline-block;
+  width: 200px;
+  height: 12px;
+  color: gold;
+  margin: 3px 0;
+  margin-top: 22%;
+  margin-left: calc(50% - 100px);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 8px;
+}
+#load{margin-left: 10px; font-weight:bold;}
+.preloader-1 .line {
+  width: 2px;
+  height: 14px;
+  background: gold;
+  margin: 5px 4px;
+  display: inline-block;
+  font-weight: bold;
+  animation: opacity-1 800ms infinite ease-in-out;
+}
+
+
+.preloader-1 .line-1 { animation-delay: 800ms; }
+.preloader-1 .line-2 { animation-delay: 600ms; }
+.preloader-1 .line-3 { animation-delay: 400ms; }
+.preloader-1 .line-4 { animation-delay: 200ms; }
+.preloader-1 .line-6 { animation-delay: 200ms; }
+.preloader-1 .line-7 { animation-delay: 400ms; }
+.preloader-1 .line-8 { animation-delay: 600ms; }
+.preloader-1 .line-9 { animation-delay: 800ms; }
+
+@keyframes opacity-1 { 
+  0% { 
+    opacity: 1;
+  }
+  50% { 
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }  
+}
+/* ---------------------------------------------------------------------------------*/
+
+
+/* ---------------------------------Header------------------------------------------------*/
+#header{
+	width: 100%;
+  	display: inline-block;
+  	position: fixed;
+  	top: 0;
+  	z-index:1;
+}
+#logo{
+	height:50px ;
+	display: inline-block;
+  	margin: 20px 30px;
+}
+#logo img{
+	width: 40px;
+	height:40px;
+	float:left;
+}
+#logo p{
+	display: inline-block;
+	font-family: Andromedaeclipsis;
+	font-size: 22px;
+	margin-top: 10px;
+	margin-left:5px;
+  	float:left;
+  	color:black;
+  	font-weight:bold;
+}
+
+
+/* ---------------------------------------------------------------------------------*/
+
+
+
+
+
+/* ---------------------------------Sidemenu------------------------------------------------*/
+#sidemenu{		
+  	display: inline-block;
+  	position: fixed;
+  	top: 25%;
+  	right:0;
+  	z-index:1;
+}
+#sidemenu a{
+	text-decoration:none;
+	color:black;
+}
+.options{
+	cursor:pointer;
+	margin:70px 0px;
+}
+
+.options p{
+	font-size:13px;
+	text-align:right;
+	margin:10px;
+}
+.options hr{
+	color:gold;
+	border:1px solid gold;
+	margin-top:-20px;
+	width: 0%;
+	opacity:0;
+}
+.options:hover > hr{
+	animation-name:option-hover;
+	animation-duration:1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes option-hover{
+	from{
+		width: 0%;
+		opacity:0;
+	}
+	to{
+		width: 100%;
+		opacity:1;
+	}
+}
+
+/* ---------------------------------------------------------------------------------*/
+
+
+
+/* ---------------------------------about------------------------------------------------*/
+#about{
+	width:100%;
+	min-height:100vh;
+	background-color: $bggold;
+	background-image: url(../images/bg4.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	display:inline-block;
+}
+
+#aboutcontent{		
+  	width:76%;
+  	margin-top:70px;
+}
+
+#drone-fig{
+	width:50%;
+	max-height:400px;	
+}
+
+#content{
+  	text-align:left;
+}
+
+#content h1{
+	margin-left:20px;
+	margin-bottom:10px;
+	width:50%;
+  	font-size: 7vw;
+    line-height: 0.93;font-family: SohneBreit-Extrafett, sans-serif;
+}
+
+#textspace{
+	display:inline-block;
+	padding :1%;
+	padding-left:4%;
+	width:70%;
+	height:90px;
+	float:left;
+	margin-bottom:10px;
+}
+#textspace span {
+	font-size: 15px;
+	margin:4px;
+	margin-left:0;
+}
+#line{
+	border:3px solid gold;
+	width:10%;
+	display:inline block;
+	margin-top:25px;
+	float:left;
+}
+
+
+
+#contact{
+	display:inline-block;
+	width:100%;
+	text-align:left;
+	margin-top:30px;
+	margin-bottom:10px;
+}
+#contact h4{
+	float:left;
+}
+#ig{
+	display: inline-block;
+	border-radius: 100%;
+	font-size: 26px;
+	padding: 6px 8px;
+	box-shadow: -5px 5px 15px gray;
+	background: radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%);
+	color: white;
+	float:left;
+	margin:0px 5px;
+	margin-top: -10px;
+}
+#git{
+	display: inline-block;
+	border-radius: 100%;
+	font-size: 36px;
+	padding: 0px 2px;
+	float:left;
+	margin:0px 5px;
+	margin-top: -10px;
+	background:black;
+	color:white;
+	box-shadow: -5px 5px 15px gray;
+}
+#env{
+	color: gold;
+	margin-left:10px; 
+	font-size: 20px;
+	border-radius: 100%;
+	padding: 8px;
+	padding-left: 9px;
+	box-shadow: -5px 5px 15px gray;
+	background-color: black;
+	float:left;
+	margin:0px 5px;
+	margin-left:20px;
+	margin-top: -10px;
+}
+
+
+/* ---------------------------------------------------------------------------------*/
+
+
+
+/* -------------------------------Digita art--------------------------------------------------*/
+
+#digitalart{
+	width:100%;
+	min-height:100vh;
+	display:inline-block;
+	background-image:url(../images/bg1.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color:#f2f2f2;
+}
+
+
+#logosnposters{
+	width:100%;
+	min-height:100vh;
+	display:inline-block;
+	background-image:url(../images/bg3.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color:#cecece;
+}
+
+#dev{
+	width:100%;
+	min-height:100vh;
+	display:inline-block;
+	background-image:url(../images/bg2.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color:$bggold;
+}
+
+
+#direction-left,#direction-right{
+	padding:10px 12px;;
+	border-radius:100%;
+	background-color:gold;
+	box-shadow: -5px 5px 15px gray;
+	margin:0% 5%;
+	position:relative;
+	top:-45%;
+}
+
+#slide-container{
+	width:100%;
+	height:450px;
+	margin-top:50px;
+	display:inline-block;
+}
+
+
+#slide-content{
+	display:inline-block;
+	width:64%;
+	height:100%;
+	position:relative;
+}
+
+#dev #slide-content{
+	display:inline-block;
+	width:84%;
+	max-height:450px;
+	position:relative;
+} 
+
+.mySlides,.mySlides2,mySlides3{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	transition:opacity 1s;
+}
+
+
+#slide-content img{
+	max-width:100%;
+	height:100%;
+	transition:opacity 1s;
+	border-radius:5px;
+	box-shadow: -10px 10px 15px darkgray;
+}
+
+
+#dev #slide-content img{
+	max-width:100%;
+	height:450px;
+	transition:opacity 1s;
+	border-radius:5px;
+	box-shadow: -10px 10px 15px darkgray;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+#aboutcontent #content h1{
+	margin-left:20px;
+	margin-bottom:10px;
+	width:50%;
+  	font-size: 7vw;
+    line-height: 0.93;font-family: SohneBreit-Extrafett, sans-serif;
+}
+
+
+#digital art #textspace{
+	height:auto;
+}
+
+#footer{
+	width:100%;
+	display:inline-block;
+}
+
+/* ---------------------------------------------------------------------------------*/
+
+
+
+
+
+/* -------------------------------------------------------Scroll------------------------------------------------------------------------- */
+.about::-webkit-scrollbar,
+body::-webkit-scrollbar{
+
+    height: 6px;
+    width: 8px;
+    transition: background 7s ease !important;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.about::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb{
+    background: black;
+    transition: background 7s ease !important;
+}
+
+/*---------------------end scroll -------------------------*/
+
+
+html{
+	scroll-behavior:smooth;
+	transition:.5s;
+}
+
+#phonemenu{
+	height:0;
+	display:none;
+	overflow:hidden;
+}
+
+#pmc,#menubars{
+	overflow:hidden;
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+*{margin: 0; padding:0; font-family: nunito sans; }	
+
+
+.preloader-1 {margin-top:calc(50vh - 20px);}
+
+#sidemenu{display:none;}
+
+/*---------------------------------------------------------------menu-----------------------------------------------------------------------------*/
+
+	#pmc,#menubars{
+		display:inline-block;
+		float:left;
+	}
+	#phonemenu{
+		position: fixed;
+		top:0;
+		height: 0vh;
+		width: 100%;
+		background: white;
+		display: inline-block;
+		transition: .5s;
+		overflow: hidden;
+		z-index: 2;
+	}
+	.menuopt{
+		height: auto;
+		width: 100%;
+		display: inline-block;
+		cursor: pointer;
+		padding-bottom: 10px;
+		padding-top: 13px;
+	}
+	.menuopt p{
+		width: 100%;
+  		color: black;
+  		text-transform: uppercase;
+  		margin-bottom: 8px;
+  		font-size: 15px;
+		cursor: pointer;
+	}
+
+
+	#menubars{
+		font-size: 30px;
+		display:inline-block;
+		margin: 10px;
+		color: black;
+		cursor: pointer;
+		font-weight: normal;
+		position: fixed;
+		right: 0px;
+		top:0px;
+		text-shadow: 0px 0px 10px white;
+		z-index: 2;
+	}
+
+	#menuclose{
+		font-size: 30px;
+		float: right;
+		margin: 10px;
+		margin-right:20px;
+		color: black;
+		cursor: pointer;
+		font-weight: normal;
+	}
+	#m-cover{
+		margin-top: 30vh;
+	}
+
+
+
+
+
+
+
+/* ---------------------------------about------------------------------------------------*/
+#about{
+	width:100%;
+	min-height:100vh;
+	background-color: $bggold;
+	background-image: url(../images/bg4p.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	display:inline-block;
+}
+
+#aboutcontent{		
+  	width:100%;
+  	margin-top:80px;
+}
+
+#drone-fig{
+	width:100%;
+}
+
+
+#content h1{
+  	font-size: 10vw;
+}
+
+#textspace{
+	height:250px;
+}
+
+#contact h4{
+	margin-left:20px;
+}
+
+
+/* ---------------------------------------------------------------------------------*/
+
+
+
+
+
+/* -------------------------------Digita art--------------------------------------------------*/
+
+#digitalart{
+	width:100%;
+	min-height:100vh;
+	display:inline-block;
+	background-image:url(../images/bg1p.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color:#f2f2f2;
+}
+
+
+#logosnposters{
+	width:100%;
+	min-height:100vh;
+	display:inline-block;
+	background-image:url(../images/bg3p.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color:#cecece;
+}
+
+#dev{
+	width:100%;
+	min-height:100vh;
+	display:inline-block;
+	background-image:url(../images/bg2p.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color:$bggold;
+}
+
+
+#direction-left,#direction-right{
+	display:none;
+}
+
+#slide-container{
+	width:100%;
+	height:200px;
+	margin-top:50px;
+	display:inline-block;
+	margin-bottom:40px;
+}
+
+
+#slide-content{
+	display:inline-block;
+	width:90%;
+	height:200px;
+}
+
+.mySlides,.mySlides2,mySlides3{
+	height:200px;
+}
+
+#slide-content img{
+	max-width:100%;
+	height:200px;
+}
+
+#dev #slide-content img{
+	max-width:100%;
+	height:200px;
+	transition:opacity 1s;
+	border-radius:5px;
+	box-shadow: -10px 10px 15px darkgray;
+}
+
+#aboutcontent #content h1{
+  	font-size: 10vw;
+}
+
+
+#digital art #textspace{
+	height:auto;
+}
+
+
+/* ---------------------------------------------------------------------------------*/
+
+
+
+
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1050px) {
+*{margin: 0; padding:0; font-family: nunito sans; }	
+
+}
