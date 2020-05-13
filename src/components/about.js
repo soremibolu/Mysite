@@ -39,8 +39,8 @@ class About extends Component {
 						<span id="contact">
 							<h4>GET IN TOUCH</h4>
 							<a href="mailto:soremibolu@gmail.com" target="_blank" title="Click to send mail"><i className="fa fa-envelope" id="env"></i></a>
-							<a href="instagram.com/myartissacruise" target="_blank"><i className="fa fa-instagram" id="ig" title="Instagram"></i></a>
-							<a href="github.com/soremibolu" target="_blank"><i className="fa fa-github" id="git" title="Github"></i></a>
+							<a href="www.instagram.com/myartissacruise" target="_blank"><i className="fa fa-instagram" id="ig" title="Instagram"></i></a>
+							<a href="www.github.com/soremibolu" target="_blank"><i className="fa fa-github" id="git" title="Github"></i></a>
 						</span>
                 	</div>
                 </center>
